@@ -1,0 +1,7 @@
+<mat-select placeholder = "Favorite food" 
+ name = "food">
+<mat-option *ngFor = "let users of allUsers" 
+   [value] = "users.id">
+   {{users.name}}
+</mat-option>
+</mat-select>

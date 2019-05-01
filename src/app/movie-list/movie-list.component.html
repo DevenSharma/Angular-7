@@ -1,0 +1,23 @@
+
+<ul class="heroes movie-lists">
+  <li *ngFor="let movie of movies">
+      <mat-card class = "tp-card">
+          <mat-card-header>
+             <div mat-card-avatar class = "tp-header-image"></div>
+             <mat-card-title> {{movie.title}}</mat-card-title>
+             <!-- <mat-card-subtitle>HTML Basics</mat-card-subtitle> -->
+          </mat-card-header>
+          <img mat-card-image   src = "{{movie.image}}" alt = "Learn HTML5">
+          <mat-card-content>
+             <p>
+              
+             </p>
+          </mat-card-content>
+          <mat-card-actions>
+             <button mat-button>{{movie.rating}}</button>
+             <button mat-button>{{movie.releaseYear}}</button>
+          </mat-card-actions>
+        </mat-card>
+    
+  </li>
+</ul>
